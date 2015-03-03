@@ -1,0 +1,40 @@
+header{
+	background: linear-gradient(to right, #a22068, #2e368f);
+
+		#menuContainer {
+		max-width: 60em;
+		/*max-height: 110px;*/
+		margin: 0 auto;
+		font-size: 16px;
+		padding-bottom: 2.2%;
+
+			>a {
+				color:#ddd6d6;
+			}
+
+		}
+		#menuCollapse ul{
+			padding-top: 28px;
+		}
+		.menuSesion{
+			padding-left: 25px;
+		}
+		.menuList li{
+			padding-left: 25px;
+		}
+		.navbar-right img, .navbar-right a, #imgLogo{
+			float: left;
+		}
+
+		.imgLogoSmall{
+			width: 70px;
+			padding: 6px;
+		}
+		.signIcon{
+			padding-top: 16px;
+		}
+		#btnMenu:hover{
+			background-color: #10167B;
+		}
+}
+
