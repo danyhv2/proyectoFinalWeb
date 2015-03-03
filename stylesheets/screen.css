@@ -1,5 +1,5 @@
 /*
-Error: File to import not found or unreadable: ../module/documentos.
+Error: File to import not found or unreadable: ../sass/module/documentos.
        Load paths:
          Compass::SpriteImporter
          C:/xampp/htdocs/proyectoFinalWeb/sass
@@ -11,7 +11,7 @@ Error: File to import not found or unreadable: ../module/documentos.
 6: @import "compass/reset";
 7: 
 8: //Modules//
-9: @import "../module/documentos";
+9: @import "../sass/module/documentos";
 
 Backtrace:
 C:/xampp/htdocs/proyectoFinalWeb/sass/screen.scss:9
@@ -59,4 +59,4 @@ C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.6/vendor/listen/lib/listen/adapter.
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: File to import not found or unreadable: ../module/documentos.\A        Load paths:\A          Compass::SpriteImporter\A          C:/xampp/htdocs/proyectoFinalWeb/sass\A          C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-core-1.0.1/stylesheets\A         on line 9 of C:/xampp/htdocs/proyectoFinalWeb/sass/screen.scss\A \A 4:  * <link href=\"/stylesheets/screen.css\" media=\"screen, projection\" rel=\"stylesheet\" type=\"text/css\" /> */\A 5: \A 6: @import \"compass/reset\";\A 7: \A 8: //Modules//\A 9: @import \"../module/documentos\";"; }
+  content: "Error: File to import not found or unreadable: ../sass/module/documentos.\A        Load paths:\A          Compass::SpriteImporter\A          C:/xampp/htdocs/proyectoFinalWeb/sass\A          C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-core-1.0.1/stylesheets\A         on line 9 of C:/xampp/htdocs/proyectoFinalWeb/sass/screen.scss\A \A 4:  * <link href=\"/stylesheets/screen.css\" media=\"screen, projection\" rel=\"stylesheet\" type=\"text/css\" /> */\A 5: \A 6: @import \"compass/reset\";\A 7: \A 8: //Modules//\A 9: @import \"../sass/module/documentos\";"; }
