@@ -1,0 +1,42 @@
+.col-centered{
+    float: none;
+    margin: 0 auto;
+    background-color: #e3e1e1;
+    overflow: auto;
+}
+
+.logo{
+	width: 100%;
+	height: auto;
+	margin-top: 0.6em;
+	text-align: center;
+}
+.title-page{
+	font-size: $font-title;
+	font-weight: bold;
+	color: $color-title-primary;
+	display: inline-block;
+}
+
+.search{
+	margin-top: 1em;
+	
+	.form-group{
+		padding-left: 8em;
+		
+		input{
+			width: 50%;
+			float: left;
+		}
+
+	}
+	input::-webkit-input-placeholder {
+ 		color: $color-placeholder;
+	}
+
+}
+
+#searchGlyph{
+	top:5px;
+	left: -2em;
+}

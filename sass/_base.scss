@@ -1,0 +1,26 @@
+body{
+	background-color: $color-body;
+}
+
+.container{
+	background-color: $color-container;
+}
+
+.btn-default{
+	background-color: $color-purple-buton;
+	color:  $color-white;
+	border-color: $color-purple-buton;
+
+	&:hover{
+		background-color: $color-purple-buton;
+		color: $color-white;
+		border-color: $color-purple-buton;
+		opacity: 0.7;
+	}
+	&:focus{
+		background-color: $color-purple-buton;
+		color: $color-white;
+		border-color: $color-purple-buton;
+	}
+
+}
