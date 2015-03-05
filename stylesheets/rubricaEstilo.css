@@ -1,0 +1,164 @@
+/* line 1, ../sass/rubricaEstilo.scss */
+#ContenedorRubricas {
+  max-width: 60em;
+  height: 50em;
+}
+
+/* line 6, ../sass/rubricaEstilo.scss */
+.izquierdaCaja {
+  width: 40%;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+/* line 12, ../sass/rubricaEstilo.scss */
+.derechaCaja {
+  width: 55%;
+  position: relative;
+}
+/* line 15, ../sass/rubricaEstilo.scss */
+.derechaCaja h3 {
+  margin-left: 10%;
+}
+/* line 18, ../sass/rubricaEstilo.scss */
+.derechaCaja .estiloCaja {
+  padding-left: 10%;
+}
+
+/* line 23, ../sass/rubricaEstilo.scss */
+.rayaCentral {
+  height: 30em;
+  width: 1%;
+  background-color: gray;
+  position: absolute;
+}
+
+/* line 30, ../sass/rubricaEstilo.scss */
+.group {
+  position: relative;
+  margin-bottom: 45px;
+}
+
+/* line 34, ../sass/rubricaEstilo.scss */
+input.botonMaterial {
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 300px;
+  border: none;
+  border-bottom: 1px solid #757575;
+}
+
+/* line 42, ../sass/rubricaEstilo.scss */
+input.botonMaterial:focus {
+  outline: none;
+}
+
+/* LABEL ======================================= */
+/* line 45, ../sass/rubricaEstilo.scss */
+label {
+  color: #999;
+  font-size: 18px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+
+/* active state */
+/* line 59, ../sass/rubricaEstilo.scss */
+input.botonMaterial:focus ~ label, input.botonMaterial:valid ~ label {
+  top: -20px;
+  font-size: 14px;
+  color: #5264AE;
+}
+
+/* BOTTOM BARS ================================= */
+/* line 66, ../sass/rubricaEstilo.scss */
+.bar {
+  position: relative;
+  display: block;
+  width: 300px;
+}
+
+/* line 67, ../sass/rubricaEstilo.scss */
+.bar:before, .bar:after {
+  content: '';
+  height: 2px;
+  width: 0;
+  bottom: 1px;
+  position: absolute;
+  background: #5264AE;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+
+/* line 78, ../sass/rubricaEstilo.scss */
+.bar:before {
+  left: 50%;
+}
+
+/* line 81, ../sass/rubricaEstilo.scss */
+.bar:after {
+  right: 50%;
+}
+
+/* active state */
+/* line 86, ../sass/rubricaEstilo.scss */
+input.botonMaterial:focus ~ .bar:before, input.botonMaterial:focus ~ .bar:after {
+  width: 50%;
+}
+
+/* HIGHLIGHTER ================================== */
+/* line 91, ../sass/rubricaEstilo.scss */
+.highlight {
+  position: absolute;
+  height: 60%;
+  width: 100px;
+  top: 25%;
+  left: 0;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+/* active state */
+/* line 102, ../sass/rubricaEstilo.scss */
+input.botonMaterial:focus ~ .highlight {
+  -webkit-animation: inputHighlighter 0.3s ease;
+  -moz-animation: inputHighlighter 0.3s ease;
+  animation: inputHighlighter 0.3s ease;
+}
+
+/* ANIMATIONS ================ */
+@-webkit-keyframes inputHighlighter {
+  from {
+    background: #5264AE;
+  }
+  to {
+    width: 0;
+    background: transparent;
+  }
+}
+@-moz-keyframes inputHighlighter {
+  from {
+    background: #5264AE;
+  }
+  to {
+    width: 0;
+    background: transparent;
+  }
+}
+@keyframes inputHighlighter {
+  from {
+    background: #5264AE;
+  }
+  to {
+    width: 0;
+    background: transparent;
+  }
+}
