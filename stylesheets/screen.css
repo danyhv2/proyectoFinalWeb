@@ -1,78 +1,362 @@
-/*
-Error: Undefined variable: "$font-title".
-        on line 15 of C:/xampp/htdocs/proyectoFinalWeb/sass/_documentos.scss
-        from line 11 of C:/xampp/htdocs/proyectoFinalWeb/sass/screen.scss
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../Ruby200/lib/ruby/gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
 
-10: @import "_configuracion.scss";
-11: @import "_documentos.scss";
+/* line 22, ../../../../Ruby200/lib/ruby/gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
 
-Backtrace:
-C:/xampp/htdocs/proyectoFinalWeb/sass/_documentos.scss:15
-C:/xampp/htdocs/proyectoFinalWeb/sass/screen.scss:11
-C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/script/tree/variable.rb:49:in `_perform'
-C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/script/tree/node.rb:50:in `perform'
-C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/perform.rb:384:in `visit_prop'
-C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/stack.rb:115:in `with_frame'
-C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/perform.rb:158:in `visit'
-C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/perform.rb:420:in `block (2 levels) in visit_rule'
-C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/perform.rb:420:in `map'
-C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/perform.rb:420:in `block in visit_rule'
-C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/perform.rb:418:in `visit_rule'
-C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/stack.rb:115:in `with_frame'
-C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/perform.rb:158:in `visit'
-C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/perform.rb:315:in `block (2 levels) in visit_import'
-C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/perform.rb:315:in `map'
-C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/perform.rb:315:in `block in visit_import'
-C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/stack.rb:88:in `block in with_import'
-C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/stack.rb:115:in `with_frame'
-C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/stack.rb:88:in `with_import'
-C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/perform.rb:312:in `visit_import'
-C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/stack.rb:115:in `with_frame'
-C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/perform.rb:158:in `visit'
-C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
-C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
-C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/perform.rb:157:in `visit'
-C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/perform.rb:8:in `visit'
-C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/root_node.rb:36:in `css_tree'
-C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/root_node.rb:20:in `render'
-C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/engine.rb:268:in `render'
-C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:17:in `block in render'
-C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:29:in `with_import_scope'
-C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:16:in `render'
-C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/plugin/compiler.rb:491:in `update_stylesheet'
-C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/plugin/compiler.rb:209:in `each'
-C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/plugin/compiler.rb:469:in `on_file_changed'
-C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/plugin/compiler.rb:328:in `block in watch'
-C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.6/vendor/listen/lib/listen/listener.rb:252:in `call'
-C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.6/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.6/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.6/vendor/listen/lib/listen/adapters/polling.rb:48:in `call'
-C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.6/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
-C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.6/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Undefined variable: \"$font-title\".\A         on line 15 of C:/xampp/htdocs/proyectoFinalWeb/sass/_documentos.scss\A         from line 11 of C:/xampp/htdocs/proyectoFinalWeb/sass/screen.scss\A \A 10: @import \"_configuracion.scss\";\A 11: @import \"_documentos.scss\";"; }
+/* line 24, ../../../../Ruby200/lib/ruby/gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../Ruby200/lib/ruby/gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../Ruby200/lib/ruby/gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../Ruby200/lib/ruby/gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../Ruby200/lib/ruby/gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../Ruby200/lib/ruby/gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../Ruby200/lib/ruby/gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 1, ../sass/_header.scss */
+header {
+  background: linear-gradient(to right, #a22068, #2e368f);
+}
+/* line 4, ../sass/_header.scss */
+header #menuContainer {
+  max-width: 60em;
+  /*max-height: 110px;*/
+  margin: 0 auto;
+  font-size: 16px;
+  padding-bottom: 2.2%;
+}
+/* line 11, ../sass/_header.scss */
+header #menuContainer a {
+  color: #ddd6d6;
+}
+/* line 16, ../sass/_header.scss */
+header #menuCollapse ul {
+  padding-top: 28px;
+}
+/* line 19, ../sass/_header.scss */
+header .menuSesion {
+  padding-left: 25px;
+}
+/* line 22, ../sass/_header.scss */
+header .menuList li {
+  padding-left: 25px;
+}
+/* line 25, ../sass/_header.scss */
+header .navbar-right img, header .navbar-right a, header #imgLogo {
+  float: left;
+}
+/* line 29, ../sass/_header.scss */
+header .imgLogoSmall {
+  width: 70px;
+  padding: 6px;
+}
+/* line 33, ../sass/_header.scss */
+header .signIcon {
+  padding-top: 16px;
+}
+/* line 36, ../sass/_header.scss */
+header #btnMenu:hover {
+  background-color: #10167B;
+}
+
+/* line 1, ../sass/_footer.scss */
+footer {
+  background: linear-gradient(to right, #a22068, #2e368f);
+}
+/* line 5, ../sass/_footer.scss */
+footer .cf:after, footer .cf:before {
+  content: ' ';
+  display: table;
+}
+/* line 9, ../sass/_footer.scss */
+footer .cf:after {
+  clear: both;
+}
+/* line 13, ../sass/_footer.scss */
+footer .contFooter {
+  max-width: 60em;
+  margin: 0 auto;
+  font-size: 13px;
+  height: 95px;
+  padding-top: 20px;
+}
+/* line 19, ../sass/_footer.scss */
+footer .contFooter li {
+  display: inline-block;
+  float: left;
+}
+/* line 23, ../sass/_footer.scss */
+footer .contFooter li:nth-child(2) {
+  padding-left: 25px;
+}
+/* line 27, ../sass/_footer.scss */
+footer .contFooter .txt {
+  display: block;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+/* line 33, ../sass/_footer.scss */
+footer .contFooter .sprite {
+  background: url("../img/sprite.png") 0 0 no-repeat;
+  width: 50px;
+  height: 50px;
+}
+/* line 38, ../sass/_footer.scss */
+footer .contFooter .fb {
+  background-position: -0px -0px;
+}
+/* line 42, ../sass/_footer.scss */
+footer .contFooter .twitter {
+  background-position: -0px -50px;
+}
+/* line 47, ../sass/_footer.scss */
+footer .contFooter .contInfoFooter {
+  margin: 0 auto;
+  /*max-width: 14.25em;*/
+  text-align: center;
+  line-height: 1.5;
+  color: #ddd6d6;
+  font-size: 0.813em;
+}
+/* line 55, ../sass/_footer.scss */
+footer .contFooter .logoCenfotec {
+  float: right;
+}
+
+/* line 1, ../sass/_configuracion.scss */
+h1, legend {
+  color: #757475;
+  font-weight: 500;
+}
+
+/* line 5, ../sass/_configuracion.scss */
+.mainConfig {
+  background-color: #e3e1e1;
+  width: 100%;
+  height: 800px;
+}
+/* line 9, ../sass/_configuracion.scss */
+.mainConfig .wrapperConfig {
+  background-color: #f5f3f4;
+  max-width: 60em;
+  margin: 0 auto;
+}
+/* line 13, ../sass/_configuracion.scss */
+.mainConfig .wrapperConfig ul {
+  padding-top: 20px;
+}
+/* line 15, ../sass/_configuracion.scss */
+.mainConfig .wrapperConfig ul li a {
+  color: #757475;
+  font-weight: bold;
+}
+/* line 21, ../sass/_configuracion.scss */
+.mainConfig .wrapperConfig .formUser {
+  padding-top: 30px;
+}
+/* line 23, ../sass/_configuracion.scss */
+.mainConfig .wrapperConfig .formUser legend {
+  padding-left: 18px;
+  font-size: 1.625em;
+}
+/* line 27, ../sass/_configuracion.scss */
+.mainConfig .wrapperConfig .formUser .msgError {
+  font-size: 13px;
+  color: #f44336;
+}
+/* line 31, ../sass/_configuracion.scss */
+.mainConfig .wrapperConfig .formUser #msgSuccess {
+  width: 272px;
+  margin-left: 18px;
+  margin-top: 12px;
+  display: none;
+}
+/* line 37, ../sass/_configuracion.scss */
+.mainConfig .wrapperConfig .formUser .btnAddUser {
+  background-color: #722d7d;
+  float: right;
+  color: #ddd6d6;
+  margin-right: 75px;
+  margin-bottom: 40px;
+}
+/* line 44, ../sass/_configuracion.scss */
+.mainConfig .wrapperConfig .formUser .lblEdit a {
+  color: #786c84;
+  font-weight: bold;
+}
+/* line 49, ../sass/_configuracion.scss */
+.mainConfig .wrapperConfig .btnDatePicker {
+  border: none;
+  background-color: #f5f3f4;
+  padding-top: 28px;
+}
+
+/*MODAL EDITAR CURSO*/
+/* line 60, ../sass/_configuracion.scss */
+.modal-header h1 {
+  text-align: center;
+}
+
+/* line 64, ../sass/_configuracion.scss */
+md-checkbox.md-default-theme.md-checked .md-icon {
+  background-color: rgba(104, 57, 119, 0.87);
+}
+
+/* line 1, ../sass/_documentos.scss */
+.col-centered {
+  float: none;
+  margin: 0 auto;
+  background-color: #e3e1e1;
+  overflow: auto;
+}
+
+/* line 8, ../sass/_documentos.scss */
+.logo {
+  width: 100%;
+  height: auto;
+  margin-top: 0.6em;
+  text-align: center;
+}
+
+/* line 14, ../sass/_documentos.scss */
+.title-page {
+  font-size: 1.875em;
+  font-weight: bold;
+  color: #757475;
+  display: inline-block;
+}
+
+/* line 21, ../sass/_documentos.scss */
+.search {
+  margin-top: 1em;
+}
+/* line 24, ../sass/_documentos.scss */
+.search .form-group {
+  padding-left: 8em;
+}
+/* line 27, ../sass/_documentos.scss */
+.search .form-group input {
+  width: 50%;
+  float: left;
+}
+/* line 33, ../sass/_documentos.scss */
+.search input::-webkit-input-placeholder {
+  color: #c7b9cf;
+}
+
+/* line 39, ../sass/_documentos.scss */
+#searchGlyph {
+  top: 5px;
+  left: -2em;
+}
+
+/* line 44, ../sass/_documentos.scss */
+.documentos-disponibles {
+  margin-top: 1em;
+}
+
+/* line 48, ../sass/_documentos.scss */
+.documentos {
+  border: 1px solid #e3e1e1;
+  padding: 1em;
+  margin-bottom: 1em;
+  font-family: "helvetica";
+  font-size: 14px;
+}
+/* line 55, ../sass/_documentos.scss */
+.documentos .titulo {
+  font-size: 20px;
+  color: #722d7d;
+  font-weight: normal;
+  display: inline-block;
+}
+/* line 62, ../sass/_documentos.scss */
+.documentos .date-and-group {
+  display: inline-block;
+}
+/* line 65, ../sass/_documentos.scss */
+.documentos .ordenar-links {
+  text-align: right;
+}
+/* line 67, ../sass/_documentos.scss */
+.documentos .ordenar-links a {
+  color: #5F3870;
+}
+/* line 71, ../sass/_documentos.scss */
+.documentos p {
+  margin: 0.5em 0 0.3em 0;
+}
+
+/* line 77, ../sass/_documentos.scss */
+.mejores-proyectos .logo {
+  background-color: #722d7d;
+  padding: 0.5em;
+  margin: 0;
+}
+/* line 82, ../sass/_documentos.scss */
+.mejores-proyectos .logo h1 {
+  font-size: 20px;
+  color: #ffffff;
+  margin-left: 0.5em;
+}
+/* line 88, ../sass/_documentos.scss */
+.mejores-proyectos .information {
+  border: 1px solid #e3e1e1;
+  margin-top: 1em;
+  padding: 1em;
+}
