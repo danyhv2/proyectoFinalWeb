@@ -1,0 +1,54 @@
+<section class="PrevistaDePerfil cf text-center">
+		<p>Nombre: {{usuario.nombre}}</p>
+		<p>Correo electr&oacute;nico: {{usuario.correoElectronico}}</p>
+		<p>Tel&eacute;fono: {{usuario.telefono}}</p>
+		<p>Celular: {{usuario.cecular}}</p>
+		<p>Biograf&iacute;a: {{usuario.descripcion}}</p>
+		<p>Direcci&oacute;n exacta: {{usuario.direccionExacta}}</p>
+		<div class="text-right">		
+<a class="btn btn-default" ng-click="setModificar()">Modificar</a>
+<a class="btn btn-default" href="#/portafolio">Ver Portafolio</a>
+		</div>
+</section>
+
+<section ng-show="modificar" class="EdicionDePerfil">
+	<form ng-submit="actualizarDatos()">
+		<md-input-container>
+			<label for="foto">Foto:</label>
+			<input type="url" name="foto" id="foto" ng-model="foto">
+		</md-input-container>
+		<md-input-container>
+			<label for="nombre">Nombre:</label>
+			<input type="text" name="nombre" id="nombre" ng-model="nombre">
+		</md-input-container>
+		<md-input-container>
+			<label for="primerApellido">Primer apellido:</label>
+			<input type="text" name="primerApellido" id="primerApellido" ng-model="primerApellido">
+		</md-input-container>
+		<md-input-container>
+			<label for="segundoApellido">Segundo apellido:</label>
+			<input type="text" name="segundoApellido" id="segundoApellido" ng-model="segundoApellido">
+		</md-input-container>
+		<md-input-container>
+			<label for="correoElectronico">Correo electr&oacute;nico:</label>
+			<input type="text" name="correoElectronico" id="correoElectronico" ng-model="correoElectronico">
+		</md-input-container>
+		<md-input-container>
+			<label for="telefono">Telefono:</label>
+			<input type="text" name="telefono" id="telefono" ng-model="telefono">
+		</md-input-container>
+		<md-input-container>
+			<label for="celular">Celular:</label>
+			<input type="text" name="celular" id="celular" ng-model="celular">
+		</md-input-container>
+		<md-input-container>
+			<label for="descripcion">Sobre m&iacute;:</label>
+			<textarea name="descripcion" id="descripcion" ng-model="descripcion" cols="30" rows="10"></textarea>
+		</md-input-container>
+		<md-input-container>
+			<label for="direccionExacta">Direcci&oacute;n exacta:</label>
+			<textarea name="direccionExacta" id="direccionExacta" ng-model="direccionExacta" cols="30" rows="10"></textarea>
+		</md-input-container>
+		<input type="submit" value="Actualizar Datos">
+	</form>
+</section>
