@@ -4,17 +4,10 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 
-// @import "compass/reset";
-@import "variables.scss";
-@import "base.scss";
-@import "header.scss";
-@import "footer.scss";
-@import "documentos.scss";
+@import "compass/reset";
+@import "_header.scss";
+@import "_footer.scss";
+@import "_configuracion.scss";
 
 
-.wrap{
-	width: $contentSize;
-	margin: 0 auto;  
-	background-color:#f4f3f3;  
-}
 

@@ -1,0 +1,66 @@
+h1, legend{
+	color:#757475;
+	font-weight:500;
+}
+.mainConfig{
+	background-color: #e3e1e1;
+	width: 100%;
+	height: 800px;
+	.wrapperConfig{
+		background-color:#f5f3f4;
+		max-width:60em;
+		margin:0 auto;
+			ul{
+			padding-top:20px;
+				li a{
+					color:#757475;
+					font-weight: bold;	
+				}
+				
+			}	
+			.formUser{
+				padding-top:30px;
+					legend{
+						padding-left:18px;
+						font-size:1.625em;
+					}
+					.msgError{
+						font-size:13px;
+						color:rgb(244,67,54);
+					}
+					#msgSuccess{
+						width: 272px;
+						margin-left: 18px;
+						margin-top: 12px;
+						display:none;
+					}
+					.btnAddUser{
+						background-color:#722d7d;
+						float:right;
+						color:#ddd6d6;
+						margin-right: 75px;
+						margin-bottom: 40px;
+					}
+					.lblEdit a{
+						color:#786c84;
+						font-weight:bold;
+					}
+			}	
+			.btnDatePicker{
+				border: none;
+				background-color: #f5f3f4;
+				padding-top: 28px;
+			}
+	}
+}
+
+/*MODAL EDITAR CURSO*/
+
+.modal-header{ 
+	h1{
+	text-align:center;
+	}
+}
+md-checkbox.md-default-theme.md-checked .md-icon {
+		background-color:rgba(104, 57, 119, 0.87);
+	}

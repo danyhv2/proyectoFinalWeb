@@ -1,0 +1,107 @@
+body{
+	font-size: 16px;
+}
+header{
+	background: linear-gradient(to right, #a22068, #2e368f);
+
+}
+.cf:after, .cf:before {
+  content: ' ';
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}
+#menuContainer{
+	max-width: 60em;
+	/*max-height: 110px;*/
+	margin: 0 auto;
+	font-size: 16px;
+	padding-bottom: 2.2%;
+}
+#menuContainer a{
+	color:#ddd6d6;
+}
+#menuCollapse ul{
+	padding-top: 28px;
+}
+.menuSesion{
+	padding-left: 25px;
+}
+.menuList li{
+	padding-left: 25px;
+}
+.navbar-right img, .navbar-right a{
+	float: left;
+}
+#imgLogo{
+	float: left;
+}
+.imgLogoSmall{
+	width: 70px;
+	padding: 6px;
+}
+.signIcon{
+	padding-top: 16px;
+}
+#btnMenu:hover{
+	background-color: #10167B;
+}
+.contFooter li{
+	display: inline-block;
+	float: left;
+}
+.contFooter li:nth-child(2){
+	display: inline-block;
+	padding-left: 25px;
+}
+.txt{
+  display: block;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.sprite{
+	background: url("../img/sprite.png") 0 0 no-repeat;
+	width: 50px; 
+  	height: 50px; 
+}
+.fb{
+  background-position:-0px -0px;
+  
+}
+.twitter{
+  background-position:-0px -50px;
+  
+}
+/*FOOTER*/
+footer{
+	background: linear-gradient(to right, #a22068, #2e368f);
+}
+.contFooter{
+	max-width: 60em;
+	margin: 0 auto;
+	font-size: 13px;
+	height: 95px;
+	padding-top: 20px;
+}
+.contInfoFooter{
+	margin: 0 auto;
+	/*max-width: 14.25em;*/
+	text-align: center;
+	line-height: 0.5;
+	color: #ddd6d6;
+	font-size: 0.813em;
+}
+.logoCenfotec{
+	float: right;
+}
+
+/*++++++test++++++++*/
+
+.test{
+	background-color: #e3e1e1;
+	width: 100%;
+	height: 800px;
+}
