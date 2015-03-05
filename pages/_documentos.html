@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html ng-app ="module">
+	<head>
+		<meta charset="utf-8">
+  		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="../css/bootstrap.css">
+		<link rel="stylesheet" href="../stylesheets/screen.css">
+		<link rel="stylesheet" href="../sass/_documentos.scss">
+	</head>
+	<body>
+	<header>
+		<nav class="navbar navbar-default" id="menuContainer"role="navigation">
+    		<div class="navbar-header">
+      			<button type="button" id="btnMenu" class="navbar-toggle btnToggle" data-toggle="collapse" data-target=".navbar-collapse">
+        			<span class="icon-bar"></span>
+        			<span class="icon-bar"></span>
+        			<span class="icon-bar"></span>
+      			</button>
+        		<img class="imgLogoSmall visible-xs" src="../img/logoApp.png" alt="Logo">
+    		</div>
+      		<div class="collapse navbar-collapse" id="menuCollapse">
+        		<img id="imgLogo" class="hidden-xs" src="../img/logoApp.png" alt="Logo">
+        		<ul class="menuList nav navbar-nav">
+          			<li><a class="menu-link" href="#">Documentos</a></li>
+          			<li><a class="menu-link" href="#">Perfil</a></li>
+            		<li><a class="menu-link" href="#">Grupo</a></li> <li><a class="menu-link" href="#">Reportes</a></li>               
+        		</ul>
+        		<ul class="menuSesion nav navbar-nav navbar-right">
+          			<li><a class="menu-link" href="#">Iniciar Sesión</a><img class="signIcon" src="../img/signIn3.png" alt="Iniciar Sesión"></li>
+        		</ul>
+   			</div>
+  		</nav>
+	</header>
+		<div class="container" ng-controller ="documentosController">
+			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" >
+    <form role="form" name="myForm"enctype="multipart/form-data" method ="POST">
+      <div class="modal-content" role="form">
+        <div class="modal-header modal-header-padding">
+          <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+          <h4 class="modal-title" id="myModalLabel">Agregar documento</h4>
+        </div>
+        <form>
+
+        <div class="group" layout="column">      
+           <md-content md-theme="docs-dark" class="md-padding" layout="row" layout-sm="column" style="font-size:1.2em">
+    		<md-input-container>
+      		<label>Title</label>
+      		<input ng-model="user.title">
+    		</md-input-container>
+        </div>
+
+  </form>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+            <button type="submit" class="btn btn-default" ng-click="guardarDocumento()" name="add">Guardar Documento</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+			<div class="row row-centered">
+				<div class="col-md-6 col-centered">
+					<div class="logo">
+						<img src="../img/documentos1.png" alt="">
+						<h1 class="title-page">
+							Documentos
+						</h1>
+					</div>
+					<form class="search" role="search">
+          				<div class="form-group">
+            				<input type="text" class="form-control" placeholder="Buscar titulo" ng-model="filter">
+            				<span type="button" id="searchGlyph" class="glyphicon glyphicon-search visible">
+          					</span>
+          					<button type="button" class="btn btn-default boton btn-margin"  data-toggle="modal" data-target="#myModal" ng-click="abrirCrearDocumento()">Agregar</button>
+          				</div>
+					</form>
+				</div>
+			</div>
+
+	<div class="col-xs-12 col-sm-12 documentos-disponibles">
+				<div class="row">
+          <div class="col-xs-12 col-sm-7">
+					<div class="col-xs-12 col-sm-12 documentos" ng-repeat="data in documentosTotales | filter:filter">
+            <h2 class ="titulo">{{ data.titulo }}{{data.extension}}</h2>
+            <div class="date-and-group pull-right"><span>{{data.fecha }}</span><span>{{data.grupo}}</span>
+            </div>
+            <p>{{data.descripcion }}</p>
+            <div class="col-md-12">
+              <p class="ordenar-links">
+                  <a href="" ng-click="visualizarDoc($index)" class="links-doc" type="button">Visualizar</a>
+                  <a href="{{data.documento}}" download="{{data.titulo}}" class="links-doc">Descargar</a>
+              </p>    
+            </div>
+          </div>
+          </div>
+					<div class="col-xs-12 col-sm-4 mejores-proyectos">
+           <div class="logo">
+            <img src="../img/files.png" alt="">
+            <h1 class="title-page">
+              Mejores Proyectos
+            </h1>
+          </div>
+          <div class="information">
+            <h1>Nombre Proyecto</h1>
+            <p>Descripciom</p>
+            <p><a href="">Leer más</a></p>
+          </div>
+          </div>
+				</div>
+	</div>
+		</div>
+		<footer>
+  			<div class="row contFooter cf">
+    			<ul class="col-lg-4 hidden-xs">
+      				<li class="img-responsive"><a href="#" class="txt sprite fb">Play</a></li>
+      				<li class="img-responsive"><a href="#" class="txt sprite twitter">Clock</a></li>
+    			</ul>
+    		<div class="col-lg-4 col-xs-6 contInfoFooter">
+      			<p>Desarrollado por DMGCoders</p>
+      			<p>Universidad Cenfotec</p>
+      			<p>Derechos Reservados 2015</p>
+    		</div>
+    		<div class="imgLogo col-lg-4 col-xs-6">
+      			<img src="../img/logoCenfotec.png" class="	logoCenfotec img-responsive" alt="Logo de Cenfotec">
+    		</div>
+  			</div>
+		</footer>
+		<script type="text/javascript" src="../js/jquery.min.js"></script>
+		<script type="text/javascript" src ="../js/bootstrap.min.js"></script>
+		<script type="text/javascript" src ="../js/angular.min.js"></script>
+		<script type="text/javascript" src ="../js/angular-route.js"></script>
+		<script type="text/javascript" src ="../js/angular-resource.js"></script>
+		<script type="text/javascript" src ="../js/angular-material.min.js"></script>
+		<script type="text/javascript" src ="../js/angular-animate.min.js"></script>
+		<script type="text/javascript" src ="../js/angular-aria.min.js"></script>
+		<script type="text/javascript" src ="../js/angular-ui.min.js"></script>
+		<script type="text/javascript" src ="../js/Controllers/documentosController.js"></script>
+
+
+	</body>
+</html>

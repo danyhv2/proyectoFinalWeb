@@ -255,3 +255,59 @@ footer .contFooter .logoCenfotec {
   top: 5px;
   left: -2em;
 }
+
+/* line 44, ../sass/_documentos.scss */
+.documentos-disponibles {
+  margin-top: 1em;
+}
+
+/* line 48, ../sass/_documentos.scss */
+.documentos {
+  border: 1px solid #e3e1e1;
+  padding: 1em;
+  margin-bottom: 1em;
+  font-family: "helvetica";
+  font-size: 14px;
+}
+/* line 55, ../sass/_documentos.scss */
+.documentos .titulo {
+  font-size: 20px;
+  color: #722d7d;
+  font-weight: normal;
+  display: inline-block;
+}
+/* line 62, ../sass/_documentos.scss */
+.documentos .date-and-group {
+  display: inline-block;
+}
+/* line 65, ../sass/_documentos.scss */
+.documentos .ordenar-links {
+  text-align: right;
+}
+/* line 67, ../sass/_documentos.scss */
+.documentos .ordenar-links a {
+  color: #5F3870;
+}
+/* line 71, ../sass/_documentos.scss */
+.documentos p {
+  margin: 0.5em 0 0.3em 0;
+}
+
+/* line 77, ../sass/_documentos.scss */
+.mejores-proyectos .logo {
+  background-color: #722d7d;
+  padding: 0.5em;
+  margin: 0;
+}
+/* line 82, ../sass/_documentos.scss */
+.mejores-proyectos .logo h1 {
+  font-size: 20px;
+  color: #ffffff;
+  margin-left: 0.5em;
+}
+/* line 88, ../sass/_documentos.scss */
+.mejores-proyectos .information {
+  border: 1px solid #e3e1e1;
+  margin-top: 1em;
+  padding: 1em;
+}

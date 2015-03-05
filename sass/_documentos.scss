@@ -40,3 +40,54 @@
 	top:5px;
 	left: -2em;
 }
+
+.documentos-disponibles{
+	margin-top: 1em;
+}
+
+.documentos{
+	border: 1px solid #e3e1e1;
+	padding: 1em;
+	margin-bottom: 1em;
+	font-family: "helvetica";
+	font-size: 14px;
+	
+	.titulo{
+		font-size: 20px;
+		color: #722d7d;
+		font-weight: normal;
+		display: inline-block;
+	}
+	
+	.date-and-group{
+		display: inline-block;
+	}
+	.ordenar-links{
+		text-align: right;
+		a{
+			color: #5F3870;
+		}
+	}
+	p{
+		margin:0.5em 0 0.3em 0;
+	}
+}
+
+.mejores-proyectos{
+	.logo{
+		background-color: $color-purple-buton;
+		padding: 0.5em;
+		margin: 0;
+		
+		h1{
+			font-size: 20px;
+			color: $color-white;
+			margin-left: 0.5em;
+		}
+	}
+	.information{
+		border: 1px solid #e3e1e1;
+		margin-top: 1em;
+		padding: 1em;
+	}
+}

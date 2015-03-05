@@ -1,0 +1,86 @@
+[
+{
+    "titulo": "Diseño de Software",
+    "documento": "../pdf/Documento de Diseño.docx",
+    "descripcion": "Este documento explica los diferentes tipos de comunicaci en la web...",
+    "grupo": "DMGCODERS",
+    "fecha": "05/06/14",
+    "extension": ".pdf"
+},
+{
+    "titulo": "Análisis del Software",
+    "documento": "../pdf/Documento de Diseño.docx",
+    "descripcion": "Este documento explica los diferentes tipos de comunicaci en la web...",
+    "grupo": "DMGCODERS",
+    "fecha": "05/06/14",
+    "extension": ".docx"
+},
+{
+    "titulo": "Mockup proyecto virtual record",
+    "documento": "../pdf/Documento de Diseño.docx",
+    "descripcion": "Este documento explica los diferentes tipos de comunicaci en la web...",
+    "grupo": "DMGCODERS",
+    "fecha": "05/06/14",
+    "extension": ".png"
+},
+{
+    "titulo": "Técnicas de comunicación",
+    "documento": "../pdf/documentos1.png",
+    "votos": 3,
+    "descripcion": "Este documento explica los diferentes tipos de comunicaci en la web...",
+    "autor": "Cinthya Gutiérrez",
+    "tema": "Javascript",
+    "peso": "45KB",
+    "fecha": "05/06/14"
+},
+{
+    "titulo": "Iniciando con PHP",
+    "documento": "../pdf/jquery.pdf",
+    "votos": 5,
+    "descripcion": "Explicación de conexiones y programación con php",
+    "autor": "Cinthya Gutierrez",
+    "tema": "Javascript",
+    "peso": "44KB",
+    "fecha": "10/07/14"
+},
+{
+    "titulo": "HTML5 intermedio",
+    "documento": "../pdf/php.pdf",
+    "votos": 1,
+    "descripcion": "Creación de páginas web",
+    "autor": "Cinthya Gutierrez",
+    "tema": "Diseño Web",
+    "peso": "44KB",
+    "fecha": "01/07/14"
+},
+{
+    "titulo": "Técnicas de comunicación",
+    "documento": "../pdf/comunicacion.pdf",
+    "votos": 3,
+    "descripcion": "Este documento explica los diferentes tipos de comunicaci en la web...",
+    "autor": "Cinthya Gutiérrez",
+    "tema": "Javascript",
+    "peso": "45KB",
+    "fecha": "05/06/14"
+},
+{
+    "titulo": "Iniciando con PHP",
+    "documento": "../pdf/jquery.pdf",
+    "votos": 5,
+    "descripcion": "Explicación de conexiones y programación con php",
+    "autor": "Cinthya Gutierrez",
+    "tema": "Javascript",
+    "peso": "44KB",
+    "fecha": "10/07/14"
+},
+{
+    "titulo": "HTML5 intermedio",
+    "documento": "../pdf/php.pdf",
+    "votos": 1,
+    "descripcion": "Creación de páginas web",
+    "autor": "Cinthya Gutierrez",
+    "tema": "Diseño Web",
+    "peso": "44KB",
+    "fecha": "01/07/14"
+}
+]
