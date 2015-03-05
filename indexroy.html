@@ -1,0 +1,80 @@
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Inicio</title>
+	<link rel="stylesheet" href="stylesheets/bootstrap.css">
+	<link rel="stylesheet" href="stylesheets/screen.css">
+  	<link rel="stylesheet" href="stylesheets/datepicker.css">
+  	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/0.7.1/angular-material.min.css">
+	<link rel="stylesheet" href="css/grupo.css">
+</head>
+<body>
+	<header>
+		 <nav class="navbar navbar-default" id="menuContainer"role="navigation">
+            <div class="navbar-header">
+                <button type="button" id="btnMenu" class="navbar-toggle btnToggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <img class="imgLogoSmall visible-xs" src="img/logoApp.png" alt="Logo">
+
+            </div>
+            <div class="collapse navbar-collapse" id="menuCollapse">
+              <img id="imgLogo" class="hidden-xs" src="img/logoApp.png" alt="Logo">
+                <ul class="menuList nav navbar-nav">
+                   <li><a class="menu-link" href="#">Documentos</a></li>
+                   <li><a class="menu-link" href="#">Perfil</a></li>
+                   <li><a class="menu-link" href="#">Grupo</a></li> 
+                   <li><a class="menu-link" href="#">Reportes</a></li>               
+                </ul>
+                <ul class="menuSesion nav navbar-nav navbar-right">
+                	<li><a class="menu-link" href="#">Iniciar Sesión</a><img class="signIcon" src="img/signIn3.png" alt="Iniciar Sesión"></li>
+                </ul>
+            </div>
+         </nav>
+	</header>
+  <div class="mainConfig" ng-app="grupos">
+    <div class="wrapperConfig">
+      <ul class="menuConfig nav nav-tabs">
+        <li role="presentation"><a ui-sref="crearGrupo">Creear grupo</a></li>
+        <li role="presentation"><a ui-sref="rubricas">Rubricas</a></li>
+      </ul>
+      <!--INJECTAR CONTENIDO-->
+      <div ui-view></div>
+      
+    </div>
+  </div>
+  <footer>
+    <div class="row contFooter cf">
+      <ul class="col-lg-4 hidden-xs">
+          <li class="img-responsive"><a href="#" class="txt sprite fb">Play</a></li>
+          <li class="img-responsive"><a href="#" class="txt sprite twitter">Clock</a></li>
+        </ul>
+      <div class="col-lg-4 col-xs-6 contInfoFooter">
+        <p>Desarrollado por DMGCoders</p>
+        <p>Universidad Cenfotec</p>
+        <p>Derechos Reservados 2015</p>
+      </div>
+      <div class="imgLogo col-lg-4 col-xs-6">
+        <img src="img/logoCenfotec.png" class="logoCenfotec img-responsive" alt="Logo de Cenfotec">
+      </div>
+    </div>
+  </footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.6/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.6/angular-animate.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.6/angular-aria.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angular_material/0.7.1/angular-material.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.14/angular-messages.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.12.1/ui-bootstrap-tpls.min.js"></script>
+
+<script type="text/javascript" src="js/app2.js"></script>
+<script type="text/javascript" src="js/datepicker.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,94 @@
+		<h2>Buscar grupo</h2> 
+			<md-input-container>
+                    <label>Buscar grupo por nombre</label>
+                    <input id="buscar" name="buscar" ng-model="buscar">
+                      <div ng-show="userForm.$submitted || userForm.name.$touched">
+                        
+                      </div>
+                  </md-input-container>
+		<br>
+			<button  data-toggle="modal" data-target="#modalNuevoGrupo" class="btn botones">Nuevo grupo</button>
+		<table class="table table-striped table-condensed table-hover">
+			<thead>
+				<tr>
+					<th>
+						<a href="" ng-click="ordenar('name')">Nombre</a>
+						<span class="caret" style="cursor: pointer" ng-click="ordenar('-name')" ></span>
+					</th>
+					<th></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="grupo in grupos | filter:buscar | orderBy:ordenSeleccionado">
+					<td><a href="" ng-click="mostrarGrupo(grupo)" data-toggle="modal" data-target="#mostrarGrupos">{{grupo.name}}</a></td>
+					<td><ul><li>{{grupo.estudiantes[0].nombre}}</li></ul></td>
+					<td><button ng-click="modificar(grupo)" class="btn botones">Modificar</button><button ng-click="removeGrupo(grupo)" class="btn botones">Eliminar</button></td>
+				</tr>
+			</tbody>
+		</table>
+	<!--MODAL-->
+	<div class="modal fade" id="modalNuevoGrupo" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+			<div class="modal-dialog">	
+				<div class="modal-content">	
+					<div class="modal-header">	
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h1>Crear nuevo grupo</h1>
+					</div>
+					<div class="modal-body">
+						<form clas="form-horizontal" >
+							 <md-input-container>
+                    <label>Nombre</label>
+                    <input id="name" md-maxlength="30" required name="name" ng-model="nuevoName">
+                      <div ng-show="userForm.$submitted || userForm.name.$touched">
+                        <div class="msgError" ng-show="userForm.name.$error.required">El nombre es un campo requerido.</div>
+                      </div>
+                  </md-input-container>
+				            <div class="form-group">
+								<label for="estdiantes">Estudiantes:</label>
+								<select name="estudiantes" id="estudiantes" ng-model="nuevoEstudiante" required class="form-control" ng-options="estudiante as estudiante.name for estudiante in estudiantes">
+								
+									<option value="">Estudiantes</option>
+								</select><button class="btn botones" ng-click="addEstudiante()">Agregar estudiante</button>
+							</div>
+							<button class="btn botones" ng-click="addGrupo()">Crear grupo</button>	
+						</form>
+						<table class="table table-striped table-condensed table-hover">
+			<thead>
+				<tr>
+					<th>
+						<a href="" ng-click="ordenar('name')">Nombre</a>
+						<span class="caret" style="cursor: pointer" ng-click="ordenar('-name')" ></span>
+					</th>
+					<th></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="mucho in muchos | filter:buscar | orderBy:ordenSeleccionado">
+					<td><ul><li>{{mucho.nombre}}</li></ul></td>
+					<td><button ng-click="modificar(grupo)" class="btn botones">Modificar</button><button ng-click="removeGrupo2(mucho)" class="btn botones">Eliminar</button></td>
+				</tr>
+			</tbody>
+		</table>
+					</div>
+				</div>
+			</div>
+		</div>
+		 <!--FIN DE MODAL-->
+		 <!--MODAL-->
+	<div class="modal fade" id="mostrarGrupos" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+			<div class="modal-dialog">	
+				<div class="modal-content">	
+					<div class="modal-header">	
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h1>Integrantes</h1>
+					</div>
+					<div class="modal-body">
+						<div ng-repeat="temporal in temporales">
+							<ul id="verGrupos"><li>{{temporal.name}}</li></ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		 <!--FIN DE MODAL-->
+		<div ui-view ></div>

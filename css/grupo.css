@@ -1,0 +1,11 @@
+
+.botones
+{
+	background-color: #712c7c;
+	color: white;
+	border-radius: 4px;
+}
+.botones:hover
+{
+	opacity: 0.9;
+}
