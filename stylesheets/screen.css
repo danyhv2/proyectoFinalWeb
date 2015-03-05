@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Welcome to Compass.
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
@@ -311,3 +312,7 @@ footer .contFooter .logoCenfotec {
   margin-top: 1em;
   padding: 1em;
 }
+=======
+body{background-color:#E3E1E1}.container{background-color:#f4f3f3}.btn-default{background-color:#722d7d;color:#ddd6d6;border-color:#722d7d}.btn-default:hover{background-color:#722d7d;color:#ddd6d6;border-color:#722d7d;opacity:0.7}.btn-default:focus{background-color:#722d7d;color:#ddd6d6;border-color:#722d7d}header{background:linear-gradient(to right, #a22068, #2e368f)}header #menuContainer{max-width:60em;margin:0 auto;font-size:16px;padding-bottom:2.2%}header #menuContainer a{color:#ddd6d6}header #menuCollapse ul{padding-top:28px}header .menuSesion{padding-left:25px}header .menuList li{padding-left:25px}header .navbar-right img,header .navbar-right a,header #imgLogo{float:left}header .imgLogoSmall{width:70px;padding:6px}header .signIcon{padding-top:16px}header #btnMenu:hover{background-color:#10167B}footer{background:linear-gradient(to right, #a22068, #2e368f)}footer .cf:after,footer .cf:before{content:' ';display:table}footer .cf:after{clear:both}footer .contFooter{max-width:60em;margin:0 auto;font-size:13px;height:95px;padding-top:20px}footer .contFooter li{display:inline-block;float:left}footer .contFooter li:nth-child(2){padding-left:25px}footer .contFooter .txt{display:block;text-indent:100%;white-space:nowrap;overflow:hidden}footer .contFooter .sprite{background:url("../img/sprite.png") 0 0 no-repeat;width:50px;height:50px}footer .contFooter .fb{background-position:-0px -0px}footer .contFooter .twitter{background-position:-0px -50px}footer .contFooter .contInfoFooter{margin:0 auto;text-align:center;line-height:1.5;color:#ddd6d6;font-size:0.813em}footer .contFooter .logoCenfotec{float:right}.col-centered{float:none;margin:0 auto;background-color:#e3e1e1;overflow:auto}.logo{width:100%;height:auto;margin-top:0.6em;text-align:center}.title-page{font-size:1.875em;font-weight:bold;color:#757475;display:inline-block}.search{margin-top:1em}.search .form-group{padding-left:8em}.search .form-group input{width:50%;float:left}.search input::-webkit-input-placeholder{color:#c7b9cf}#searchGlyph{top:5px;left:-2em}.wrap{width:80%;margin:0 auto;background-color:#f4f3f3}
+/*# sourceMappingURL=screen.css.map */
+>>>>>>> 7af74e6abcc318dc9f91c663c2e38aa73f619b83

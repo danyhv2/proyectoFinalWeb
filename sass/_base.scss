@@ -8,18 +8,18 @@ body{
 
 .btn-default{
 	background-color: $color-purple-buton;
-	color:  $color-white;
+	color:  $color-letra-button;
 	border-color: $color-purple-buton;
 
 	&:hover{
 		background-color: $color-purple-buton;
-		color: $color-white;
+		color: $color-letra-button;
 		border-color: $color-purple-buton;
 		opacity: 0.7;
 	}
 	&:focus{
 		background-color: $color-purple-buton;
-		color: $color-white;
+		color: $color-letra-button;
 		border-color: $color-purple-buton;
 	}
 
