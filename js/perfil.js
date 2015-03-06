@@ -1,33 +1,60 @@
-var app = angular.module('CoreApp', ['ngRoute']);
+var app = angular.module('module', ['ngAnimate']);
+//Directivas
+app.directive('slideshow', [
 
-//Configuración de enrutamiento
-app.config(['$routeProvider', '$locationProvider',
-	function ($routeProvider, $locationProvider) {
-		$routeProvider
-			.when('/', {
-				templateUrl: 'pages/index_logIn.html',
-				controller: 'MainCtrl'
-			})
-			.when('/perfil', {
-				templateUrl: 'pages/perfil.html',
-				controller: 'PerfilCtrl'
-			})
-			.when('/portafolio', {
-				template: 'pages/portafolio.html',
-				controller: 'PortafolioCtrl'
-			});
+	function () {
+		return {
+			restrict: 'E',
+			templateUrl: 'views/_carousel.html',
+			controller: 'slideshowCtrl'
+		}
 }]);
-
-
-//Controladores
-app.controller('MainCtrl', ['$scope',
+app.controller('slideshowCtrl', ['$scope',
 	function ($scope) {
-		$scope.mensaje = 'Bienvenido al mundo de DMG Coders';
+		$scope.images = [
+			{
+				src: 'img/fb.png',
+				alt: 'facebook'
+	},
+			{
+				src: 'img/documentos1.png',
+				alt: 'Documentos 1'
+	}]
 }])
-app.controller('LoginCtrl', ['$scope',
-	function ($scope) {
-		console.log('Bienvenido %s', 'Daniel');
+app.directive('proyectoInfo', [
+
+	function () {
+		return {
+			restrict: 'E',
+			templateUrl: 'views/proyectoInfo.html',
+			controller: 'ProyectoCtrl'
+		};
 }]);
+app.directive('sliderProyectos', [
+
+	function () {
+		return {
+			restrict: 'E',
+			templateUrl: 'views/contenedorProyectos.html',
+			controller: 'ProyectoCtrl'
+		}
+}]);
+//Controladores
+app.controller('ProyectoCtrl', ['$scope', 'ControlProyectos',
+	function ($scope, ControlProyectos) {
+		$scope.proyectos = ControlProyectos.obtenerTodos();
+		$scope.enVotacion = true;
+}])
+//Servicios
+app.factory('ControlProyectos', ['$http',
+	function ($http) {
+		return {
+			obtenerTodos: function () {
+				return proyectosData;
+			}
+		}
+}]);
+
 app.controller('PerfilCtrl', ['$scope', 'ControlDeUsuario',
 	function ($scope, ControlDeUsuario) {
 		$scope.modificar = false;
@@ -43,31 +70,6 @@ app.controller('PerfilCtrl', ['$scope', 'ControlDeUsuario',
 			ControlDeUsuario.modificarPerfil($scope.foto, $scope.nombre, $scope.primerApellido, $scope.segundoApellido, $scope.correoElectronico, $scope.telefono, $scope.celular, $scope.descripcion, $scope.direccionExacta)
 		}
 }]);
-app.controller('PortafolioCtrl', ['$scope',
-	function ($scope) {
-		console.log('El portafolio aun esta en construcción.');
-	}]);
-
-///Directivas
-app.directive('cabeceraLogout', [
-
-	function () {
-		return {
-			restrict: 'E',
-			templateUrl: 'partial-header.html',
-			controller: 'LoginCtrl'
-		};
-}])
-	.directive('piePaginaPrincipal', [
-
-		function () {
-			return {
-				restrict: 'E',
-				templateUrl: 'partial-footer.html'
-			};
-	}]);
-
-//Servicios
 app.factory('ControlDeUsuario', ['$http',
 	function ($http) {
 		return {
@@ -90,8 +92,23 @@ app.factory('ControlDeUsuario', ['$http',
 		};
 }]);
 
+var proyectosData = [{
+		nombre: 'Dmg Coders',
+		descripcion: 'WebApp para control de historial de proyecto ',
+		leerMas: 'http: //google.com'
+			}, {
+		nombre: 'Dmg Sliders',
+		descripcion: 'WebApp para control de historial de proyecto',
+		leerMas: 'http://yahoo.com'
+			},
+	{
+		nombre: 'Dmg Sliders',
+		descripcion: 'WebApp para control de historial de proyecto',
+		leerMas: 'http://yahoo.com'
+			}];
 var usuarioData = {
-	foto: '#',
+	foto: 'img/fb.png',
+	carrera: 'Diseño y Desarrollo Web',
 	nombre: 'Daniel Campos Arce',
 	correoElectronico: 'dcamposa@ucenfotec.ac.cr',
 	telefono: 22563450,

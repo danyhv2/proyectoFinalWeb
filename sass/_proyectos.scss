@@ -1,0 +1,15 @@
+.cabecera-votacion h2, .cabecera-votacion a{
+	display: inline-block;
+}
+.wrap{
+	max-width: 1200px;
+	margin: 0 auto;
+	background-color: #f4f3f3;
+}
+.proyecto-info{
+	border: 1px solid gray;
+	margin-right: 8px;
+	&:first-child{
+		margin-right: 0;
+	}
+}

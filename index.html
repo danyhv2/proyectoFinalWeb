@@ -5,6 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Modificar Usuario</title>
+<<<<<<< HEAD
 	<link rel="stylesheet" href="../css/bootstrap-responsive.min.css">
 	<link rel="stylesheet" href="../css/bootstrap.css">
 	<link rel="stylesheet" href="../stylesheets/screen.css">
@@ -21,5 +22,61 @@
 	<script src="../js/angular-aria.min.js"></script>
 	<script src="../js/jquery.min.js"></script>
 	<script src="../js/app.js"></script>
+=======
+      <link rel="stylesheet" href="stylesheets/bootstrap.css">
+      <link rel="stylesheet" href="stylesheets/screen.css">
+      <link rel="stylesheet" href="stylesheets/datepicker.css">
+      <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/0.7.1/angular-material.min.css">
+</head>
+<body>
+	 <header>
+         <nav class="navbar navbar-default" id="menuContainer"role="navigation">
+            <div class="navbar-header">
+               <button type="button" id="btnMenu" class="navbar-toggle btnToggle" data-toggle="collapse" data-target=".navbar-collapse">
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               </button>
+               <img class="imgLogoSmall visible-xs" src="img/logoApp.png" alt="Logo">
+            </div>
+            <div class="collapse navbar-collapse" id="menuCollapse">
+               <img id="imgLogo" class="hidden-xs" src="img/logoApp.png" alt="Logo">
+               <ul class="menuList nav navbar-nav">
+                  <li ><a class="menu-link" ui-sref="nada por aqui">Documentos</a></li>
+                  <li ><a class="menu-link" ui-sref="nada por aca">Perfil</a></li>
+                  <li ><a class="menu-link" ui-sref="grupo">Grupo</a></li><!--Direccion a mi parte-->
+                  <li ><a class="menu-link" ui-sref="ni aca">Reportes</a></li>
+               </ul>
+               <ul class="menuSesion nav navbar-nav navbar-right">
+                  <li><a class="menu-link" href="#">Iniciar Sesión</a><img class="signIcon" src="img/signIn3.png" alt="Iniciar Sesión"></li>
+               </ul>
+            </div>
+         </nav>
+      </header>
+		<section class="center-block wrap" ng-view></section>
+<footer>
+         <div class="row contFooter cf">
+            <ul class="col-lg-4 hidden-xs">
+               <li class="img-responsive"><a href="https://es-la.facebook.com/Cenfotec" class="txt sprite fb">Play</a></li>
+               <li class="img-responsive"><a href="https://twitter.com/ucenfotec" class="txt sprite twitter">Clock</a></li>
+            </ul>
+            <div class="col-lg-4 col-xs-6 contInfoFooter">
+               <p>Desarrollado por DMGCoders</p>
+               <p>Universidad Cenfotec</p>
+               <p>Derechos Reservados 2015</p>
+            </div>
+            <div class="imgLogo col-lg-4 col-xs-6">
+               <img src="img/logoCenfotec.png" class="logoCenfotec img-responsive" alt="Logo de Cenfotec">
+            </div>
+         </div>
+      </footer>
+	<script src="js/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angular_material/0.7.0/angular-material.min.js"></script>
+	<script src="js/angular-route.js"></script>
+	<script src="js/angular-animate.min.js"></script>
+	<script src="js/angular-aria.min.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/perfil.js"></script>
+>>>>>>> d77f80d4d26e5d3e7884f22123eff5f2ac35a488
 </body>
 </html>

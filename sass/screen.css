@@ -90,18 +90,13 @@ footer {
       float: right; }
 
 .cabecera-votacion h2, .cabecera-votacion a {
-  display: inline-block; }
+  display: inline-block;
+  color: orange; }
 
 .wrap {
-  max-width: 1200px;
+  max-width: 960px;
   margin: 0 auto;
-  background-color: #f4f3f3; }
-
-.proyecto-info {
-  border: 1px solid gray;
-  margin-right: 8px; }
-  .proyecto-info:first-child {
-    margin-right: 0; }
+  background-color: orange; }
 
 h1, legend {
   color: #757475;
@@ -222,29 +217,12 @@ md-checkbox.md-default-theme.md-checked .md-icon {
   margin-top: 1em;
   padding: 1em; }
 
-<<<<<<< HEAD
-/* line 97, ../sass/_documentos.scss */
-.modal-documentos .modal-body input {
-  margin-bottom: 1em;
-}
-/* line 100, ../sass/_documentos.scss */
-.modal-documentos .modal-body div {
-  margin-left: 0 !important;
-}
-
-/* line 105, ../sass/_documentos.scss */
-=======
 .modal-body input {
   margin-bottom: 1em; }
 
->>>>>>> d77f80d4d26e5d3e7884f22123eff5f2ac35a488
 .link {
   text-align: right; }
 
-<<<<<<< HEAD
-/* line 109, ../sass/_documentos.scss */
-=======
->>>>>>> d77f80d4d26e5d3e7884f22123eff5f2ac35a488
 .information h1 {
   display: inline-block;
   font-size: 18px;
