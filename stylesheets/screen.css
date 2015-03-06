@@ -178,6 +178,36 @@ footer .contFooter .logoCenfotec {
   float: right;
 }
 
+/* line 1, ../sass/_base.scss */
+body {
+  background-color: #E3E1E1;
+}
+
+/* line 5, ../sass/_base.scss */
+.container {
+  background-color: #f4f3f3;
+}
+
+/* line 9, ../sass/_base.scss */
+.btn-default {
+  background-color: #722d7d;
+  color: #ddd6d6;
+  border-color: #722d7d;
+}
+/* line 14, ../sass/_base.scss */
+.btn-default:hover {
+  background-color: #722d7d;
+  color: #ddd6d6;
+  border-color: #722d7d;
+  opacity: 0.7;
+}
+/* line 20, ../sass/_base.scss */
+.btn-default:focus {
+  background-color: #722d7d;
+  color: #ddd6d6;
+  border-color: #722d7d;
+}
+
 /* line 1, ../sass/_configuracion.scss */
 h1, legend {
   color: #757475;
@@ -359,4 +389,9 @@ md-checkbox.md-default-theme.md-checked .md-icon {
   border: 1px solid #e3e1e1;
   margin-top: 1em;
   padding: 1em;
+}
+
+/* line 96, ../sass/_documentos.scss */
+.modal-body input {
+  margin-bottom: 1em;
 }
