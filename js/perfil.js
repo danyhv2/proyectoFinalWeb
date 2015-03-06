@@ -1,21 +1,4 @@
-var app = angular.module('CoreApp', ['ngRoute', 'ngAnimate']);
-
-//Configuración de enrutamiento
-app.config(['$routeProvider', '$locationProvider',
-	function ($routeProvider, $locationProvider) {
-		$routeProvider
-			.when('/', {
-				templateUrl: 'pages/home.html',
-			})
-			.when('/perfil', {
-				templateUrl: 'pages/_perfil.html',
-				controller: 'PerfilCtrl'
-			})
-			.otherwise({
-				redirectTo: '/'
-			});
-		$locationProvider.html5Mode(true);
-}]);
+var app = angular.module('module', ['ngAnimate']);
 //Directivas
 app.directive('slideshow', [
 
