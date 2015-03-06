@@ -1,6 +1,8 @@
-
-<section class="PrevistaDePerfil cf wrap text-center">
-	<div class="media center-block">
+<div class="contenedor">
+	
+</div>
+<section class="previstaDePerfil cf wrap center-block">
+	<div class="media">
   <div class="media-left">
     <a href="#">
       <img width="80" height="80" class=" center-block media-object" ng-src="{{usuario.foto}}" alt="{{usuario.alt}}">
@@ -11,7 +13,6 @@
     <h3 class="media-heading">Carrera: {{usuario.carrera}}</h3>
   </div>
 </div>
-		
 		<p>Correo electr&oacute;nico: {{usuario.correoElectronico}}</p>
 		<p>Tel&eacute;fono: {{usuario.telefono}}</p>
 		<p>Celular: {{usuario.cecular}}</p>
@@ -25,39 +26,39 @@
 
 <section ng-show="modificar" class="EdicionDePerfil">
 	<form ng-submit="actualizarDatos()">
-		<md-input-container>
-			<label for="foto">Foto:</label>
+		<md-input-container layout="row">
 			<input type="url" name="foto" id="foto" ng-model="foto">
+			<label for="foto">Foto:</label>
 		</md-input-container>
-		<md-input-container>
+		<md-input-container layout="row">
 			<label for="nombre">Nombre:</label>
 			<input type="text" name="nombre" id="nombre" ng-model="nombre">
 		</md-input-container>
-		<md-input-container>
+		<md-input-container layout="row">
 			<label for="primerApellido">Primer apellido:</label>
 			<input type="text" name="primerApellido" id="primerApellido" ng-model="primerApellido">
 		</md-input-container>
-		<md-input-container>
+		<md-input-container layout="row">
 			<label for="segundoApellido">Segundo apellido:</label>
 			<input type="text" name="segundoApellido" id="segundoApellido" ng-model="segundoApellido">
 		</md-input-container>
-		<md-input-container>
+		<md-input-container layout="row">
 			<label for="correoElectronico">Correo electr&oacute;nico:</label>
 			<input type="text" name="correoElectronico" id="correoElectronico" ng-model="correoElectronico">
 		</md-input-container>
-		<md-input-container>
+		<md-input-container layout="row">
 			<label for="telefono">Telefono:</label>
 			<input type="text" name="telefono" id="telefono" ng-model="telefono">
 		</md-input-container>
-		<md-input-container>
+		<md-input-container layout="row">
 			<label for="celular">Celular:</label>
 			<input type="text" name="celular" id="celular" ng-model="celular">
 		</md-input-container>
-		<md-input-container>
+		<md-input-container layout="row">
 			<label for="descripcion">Sobre m&iacute;:</label>
 			<textarea name="descripcion" id="descripcion" ng-model="descripcion" cols="30" rows="10"></textarea>
 		</md-input-container>
-		<md-input-container>
+		<md-input-container layout="row">
 			<label for="direccionExacta">Direcci&oacute;n exacta:</label>
 			<textarea name="direccionExacta" id="direccionExacta" ng-model="direccionExacta" cols="30" rows="10"></textarea>
 		</md-input-container>
