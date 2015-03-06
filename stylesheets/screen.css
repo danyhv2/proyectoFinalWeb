@@ -222,12 +222,29 @@ md-checkbox.md-default-theme.md-checked .md-icon {
   margin-top: 1em;
   padding: 1em; }
 
+<<<<<<< HEAD
+/* line 97, ../sass/_documentos.scss */
+.modal-documentos .modal-body input {
+  margin-bottom: 1em;
+}
+/* line 100, ../sass/_documentos.scss */
+.modal-documentos .modal-body div {
+  margin-left: 0 !important;
+}
+
+/* line 105, ../sass/_documentos.scss */
+=======
 .modal-body input {
   margin-bottom: 1em; }
 
+>>>>>>> d77f80d4d26e5d3e7884f22123eff5f2ac35a488
 .link {
   text-align: right; }
 
+<<<<<<< HEAD
+/* line 109, ../sass/_documentos.scss */
+=======
+>>>>>>> d77f80d4d26e5d3e7884f22123eff5f2ac35a488
 .information h1 {
   display: inline-block;
   font-size: 18px;

@@ -1,11 +1,20 @@
 var app = angular.module("module", ['ngResource','ngRoute']);
  
 app.controller("documentosController", function ($scope, $http, dataResource,$rootScope) {
+    $scope.currentPage = 0;
+    $scope.pageSize = 2;
+    $scope.documentosNuevos = [];
+
+    $scope.numberOfPages=function(){
+        return Math.ceil($scope.documentosTotales.length/$scope.pageSize);
+    }
+
+
     $http.get('../data/documento.json').success(function (data) {
         $scope.documentosTotales = data;
     });
     $scope.datosResource = dataResource.get();
-     
+
      $scope.visualizarDoc = function(index,event){
         $http.get('../data/documento.json').success(function(data) {
         $scope.documentosmostrar = data;
@@ -22,6 +31,7 @@ app.controller("documentosController", function ($scope, $http, dataResource,$ro
 
     $(".errorArchivo").addClass('hide');
 
+   
     
     $scope.guardarDocumento = function(){
         var descripcion = $scope.documento.descripcion,
@@ -57,7 +67,6 @@ app.controller("documentosController", function ($scope, $http, dataResource,$ro
     };
 
     $scope.ver = 1;
-
 });
 
 
@@ -66,3 +75,4 @@ app.factory("dataResource", function ($resource) {
         { get: { method: "GET", isArray: true }
     })
 });
+
