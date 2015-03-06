@@ -391,17 +391,21 @@ md-checkbox.md-default-theme.md-checked .md-icon {
   padding: 1em;
 }
 
-/* line 96, ../sass/_documentos.scss */
-.modal-body input {
+/* line 97, ../sass/_documentos.scss */
+.modal-documentos .modal-body input {
   margin-bottom: 1em;
 }
+/* line 100, ../sass/_documentos.scss */
+.modal-documentos .modal-body div {
+  margin-left: 0 !important;
+}
 
-/* line 101, ../sass/_documentos.scss */
+/* line 105, ../sass/_documentos.scss */
 .link {
   text-align: right;
 }
 
-/* line 105, ../sass/_documentos.scss */
+/* line 109, ../sass/_documentos.scss */
 .information h1 {
   display: inline-block;
   font-size: 18px;

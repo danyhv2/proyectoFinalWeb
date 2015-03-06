@@ -92,12 +92,16 @@
 	}
 }
 
-.modal-body{
-	input{
-		margin-bottom: 1em;
+.modal-documentos{
+	.modal-body{
+		input{
+			margin-bottom: 1em;
+		}
+		div{
+			margin-left: 0!important;
+		}
 	}
 }
-
 .link{
 	text-align: right;
 }
