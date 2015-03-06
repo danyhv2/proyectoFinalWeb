@@ -1,0 +1,119 @@
+<div class ="contenedorRubricasUi" ng-controller='directorController as este'>
+    <div class="pull-left izquierdaCaja">
+        <h3>Rubricas</h3>
+        <div class="contenedorDeCajas">
+        <table class="table table-hover">
+            <tbody>
+                 <tr ng-repeat="valores in este.datos.RubricasCreadas">
+                     <td>{{valores.NombreDeRubrica}}</td>
+                     <td><img src="img/edit.png"  ng-click="edit(valores)" data-toggle="modal" data-target="#modelDetallesRubrica" style="cursor: pointer"></td>
+                 </tr>
+            </tbody>
+        </table>
+         </div>
+    </div>
+
+    <div class="pull-right derechaCaja">
+        <div class="rayaCentral"></div>
+        <h3>Nueva Rubrica</h3>
+        <form name="RubForm" ng-submit="RubForm.$valid && add()" class="estiloCaja" novalidate>
+            <ng-form name="rubricaFormDirector">
+                <div class="group">      
+                    <input class="botonMaterial"type="text" ng-model="newNombreRubrica" required>
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label>Nombre de la rubrica</label>
+                </div>
+                <div class="group">      
+                    <input class="botonMaterial "type="text" ng-model="int1" required>
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label>{{este.datos.ParamatrosRubrica[0].parametro1}}</label>
+                </div>
+                <div class="group">      
+                    <input class="botonMaterial "type="text" ng-model="int2" required>
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label>{{este.datos.ParamatrosRubrica[1].parametro2}}</label>
+                </div>
+                <div class="group">      
+                    <input class="botonMaterial "type="text" ng-model="int3" required>
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label>{{este.datos.ParamatrosRubrica[2].parametro3}}</label>
+                </div>
+                <div class="group">      
+                    <input class="botonMaterial "type="text" ng-model="int4" required>
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label>{{este.datos.ParamatrosRubrica[3].parametro4}}</label>
+                </div>
+                <div class="group">      
+                    <input class="botonMaterial "type="text" ng-model="int5" required>
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label>{{este.datos.ParamatrosRubrica[4].parametro5}}</label>
+                </div>
+            </ng-form>
+            <div class="alert alert-danger errormsj">La suma de los porcentajes no es igual a 100.</div>
+            <input type="submit" class="btn agregarBtn simpleColor" value="Agregar" id="agregarubrica">
+        </form>
+
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modelDetallesRubrica" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Detalles</h4>
+                </div>
+                <div class="rayaCentralMorada"></div>
+                <div class="modal-body">
+                    <div class="group">
+                        <input ng-model="entrada1" class="botonMaterial" id="a"type="text" required>
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label>Nombre De Rubrica</label>
+                    </div>
+                    <div class="group">
+                        <input ng-model="entrada2" class="botonMaterial" id="a"type="text" required>
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label>Asistencia</label>
+                    </div>
+                    <div class="group">
+                        <input ng-model="entrada3" class="botonMaterial" id="a"type="text" required>
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label>Concepto</label>
+                    </div>
+                    <div class="group">
+                        <input ng-model="entrada4" class="botonMaterial" id="a"type="text" required>
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label>Examen 1</label>
+                    </div>
+                    <div class="group">
+                        <input ng-model="entrada5" class="botonMaterial" id="a"type="text" required>
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label>Examen 2</label>
+                    </div>
+                    <div class="group">
+                        <input ng-model="entrada6" class="botonMaterial" id="a"type="text" required>
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label>Tareas</label>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                    <button type="button" class="simpleColor btn" data-dismiss="modal" ng-click="editCreat()">
+                    Guardar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
