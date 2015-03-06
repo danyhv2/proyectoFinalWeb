@@ -90,18 +90,13 @@ footer {
       float: right; }
 
 .cabecera-votacion h2, .cabecera-votacion a {
-  display: inline-block; }
+  display: inline-block;
+  color: orange; }
 
 .wrap {
-  max-width: 1200px;
+  max-width: 960px;
   margin: 0 auto;
-  background-color: #f4f3f3; }
-
-.proyecto-info {
-  border: 1px solid gray;
-  margin-right: 8px; }
-  .proyecto-info:first-child {
-    margin-right: 0; }
+  background-color: orange; }
 
 h1, legend {
   color: #757475;

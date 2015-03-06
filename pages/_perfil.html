@@ -1,5 +1,17 @@
-<section class="PrevistaDePerfil cf text-center">
-		<p>Nombre: {{usuario.nombre}}</p>
+
+<section class="PrevistaDePerfil cf wrap text-center">
+	<div class="media center-block">
+  <div class="media-left">
+    <a href="#">
+      <img width="80" height="80" class=" center-block media-object" ng-src="{{usuario.foto}}" alt="{{usuario.alt}}">
+    </a>
+  </div>
+  <div class="media-body">
+    <h4 class="media-heading">Nombre: {{usuario.nombre}}</h4>
+    <h3 class="media-heading">Carrera: {{usuario.carrera}}</h3>
+  </div>
+</div>
+		
 		<p>Correo electr&oacute;nico: {{usuario.correoElectronico}}</p>
 		<p>Tel&eacute;fono: {{usuario.telefono}}</p>
 		<p>Celular: {{usuario.cecular}}</p>
