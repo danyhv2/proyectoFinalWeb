@@ -46,7 +46,9 @@ app.controller("documentosController", function ($scope, $http, dataResource,$ro
                 $("#message1").addClass('hide');
             }, 2000);
 
+        JSON.stringify(documentoNuevo);    
         console.log(documentoNuevo);
+
 
 
         $scope.documento.titulo = " ";

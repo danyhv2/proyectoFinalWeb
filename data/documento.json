@@ -2,25 +2,33 @@
 {
     "titulo": "Diseño de Software",
     "documento": "../pdf/Documento de Diseño.docx",
-    "descripcion": "Este documento explica los diferentes tipos de comunicaci en la web...",
-    "grupo": "DMGCODERS",
-    "fecha": "05/06/14",
-    "extension": ".pdf"
-},
-{
-    "titulo": "Análisis del Software",
-    "documento": "../pdf/Documento de Diseño.docx",
-    "descripcion": "Este documento explica los diferentes tipos de comunicaci en la web...",
+    "descripcion": "Este documento explica los diferentes tipos de comunicaci en la web,Este documento explica los diferentes tipos de comunicaci en la web...",
     "grupo": "DMGCODERS",
     "fecha": "05/06/14",
     "extension": ".docx"
 },
 {
-    "titulo": "Mockup proyecto virtual record",
-    "documento": "../pdf/Documento de Diseño.docx",
-    "descripcion": "Este documento explica los diferentes tipos de comunicaci en la web...",
+    "titulo": "Análisis del Software",
+    "documento": "../pdf/php.pdf",
+    "descripcion": "Este documento explica los diferentes tipos de comunicaci en la web,Este documento explica los diferentes tipos de comunicaci en la web....",
     "grupo": "DMGCODERS",
     "fecha": "05/06/14",
-    "extension": ".png"
+    "extension": ".pdf"
+},
+{
+    "titulo": "Mockup proyecto virtual record",
+    "documento": "../pdf/bootstrap.zip",
+    "descripcion": "Este documento explica los diferentes tipos de comunicaci en la web,Este documento explica los diferentes tipos de comunicaci en la web...",
+    "grupo": "DMGCODERS",
+    "fecha": "05/06/14",
+    "extension": ".zip"
+},
+{
+    "titulo": "Análisis del Software",
+    "documento": "../pdf/php.pdf",
+    "descripcion": "Este documento explica los diferentes tipos de comunicaci en la web,Este documento explica los diferentes tipos de comunicaci en la web...",
+    "grupo": "DMGCODERS",
+    "fecha": "05/06/14",
+    "extension": ".pdf"
 }
 ]

@@ -396,6 +396,18 @@ md-checkbox.md-default-theme.md-checked .md-icon {
   margin-bottom: 1em;
 }
 
+/* line 101, ../sass/_documentos.scss */
+.link {
+  text-align: right;
+}
+
+/* line 105, ../sass/_documentos.scss */
+.information h1 {
+  display: inline-block;
+  font-size: 18px;
+  margin-bottom: 0.7em;
+}
+
 /*Estilos Guillermo*/
 /* line 3, ../sass/rubricaEstilo.scss */
 #ContenedorRubricas {
@@ -562,38 +574,27 @@ input.botonMaterial:focus ~ .highlight {
 
 /* ANIMATIONS ================ */
 @-webkit-keyframes inputHighlighter {
-  /* line 135, ../sass/rubricaEstilo.scss */
   from {
     background: #5264AE;
   }
-
-  /* line 136, ../sass/rubricaEstilo.scss */
   to {
     width: 0;
     background: transparent;
   }
 }
-
 @-moz-keyframes inputHighlighter {
-  /* line 139, ../sass/rubricaEstilo.scss */
   from {
     background: #5264AE;
   }
-
-  /* line 140, ../sass/rubricaEstilo.scss */
   to {
     width: 0;
     background: transparent;
   }
 }
-
 @keyframes inputHighlighter {
-  /* line 143, ../sass/rubricaEstilo.scss */
   from {
     background: #5264AE;
   }
-
-  /* line 144, ../sass/rubricaEstilo.scss */
   to {
     width: 0;
     background: transparent;

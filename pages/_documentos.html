@@ -64,7 +64,7 @@
         <input type="text" class="form-control distancia_input_modal" placeholder="Titulo" id="tituloNuevoDoc" ng-model="documento.titulo" name="titulo" required>
         <input type="text" class="form-control distancia_input_modal" placeholder="Equipo" id="temaNuevoDoc" ng-model="documento.grupo" name="tema"required>  
         <input type="text" class="form-control distancia_input_modal" placeholder="Descripción del documento" id="descripcionNuevoDoc" ng-model="documento.descripcion" name="descripcion">
-        <input type="file" id="temaNuevoDoc" ng-model="documento.documento"  id="files"/>
+        <input type="file" id="files"/>
         <output id="list"></output>
       </div>
       <div class="modal-footer">
@@ -80,7 +80,7 @@
           <div class="col-xs-12 col-sm-7">
 					<div class="col-xs-12 col-sm-12 documentos" ng-repeat="data in documentosTotales | filter:filter">
             <h2 class ="titulo">{{ data.titulo }}{{data.extension}}</h2>
-            <div class="date-and-group pull-right"><span>{{data.fecha }}</span><span>{{data.grupo}}</span>
+            <div class="date-and-group pull-right"><span>{{data.fecha }}</span><br><span>{{data.grupo}}</span>
             </div>
             <p>{{data.descripcion }}</p>
             <div class="col-md-12">
@@ -99,9 +99,22 @@
             </h1>
           </div>
           <div class="information">
+            <img src="../img/numero1.png">
             <h1>Nombre Proyecto</h1>
             <p>Descripciom</p>
-            <p><a href="">Leer más</a></p>
+            <p class ="link"><a href="">Leer más</a></p>
+          </div>
+          <div class="information">
+            <img src="../img/numero2.png">
+            <h1>Nombre Proyecto</h1>
+            <p>Descripciom</p>
+            <p class ="link"><a href="">Leer más</a></p>
+          </div>
+          <div class="information">
+            <img src="../img/numero3.png">
+            <h1>Nombre Proyecto</h1>
+            <p>Descripciom</p>
+            <p class ="link"><a href="">Leer más</a></p>
           </div>
           </div>
 				</div>
