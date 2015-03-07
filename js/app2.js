@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 	(function(){
+=======
+(function(){
+>>>>>>> 490eec1d28cf4ee9072b83391ac4a7f322605105
 
 	var grupos = angular.module('grupos', ['ngMaterial', 'ngMessages', 'ui.bootstrap.demo','ui.router']);
 		grupos.controller('gruposController', function($scope, $http){

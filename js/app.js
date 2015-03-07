@@ -1,4 +1,25 @@
-var app = angular.module('module', ['ngAnimate']);
+var app = angular.module('CoreApp', ['ngRoute', 'ngMaterial', 'ngAnimate']);
+
+//Configuración de enrutamiento
+app.config(['$routeProvider', '$locationProvider',
+	function ($routeProvider, $locationProvider) {
+		$routeProvider
+			.when('/', {
+				templateUrl: 'pages/home.html',
+			})
+			.when('/perfil', {
+				templateUrl: 'pages/_perfil.html',
+				controller: 'PerfilCtrl'
+			})
+			.when('/portafolio', {
+				templateUrl: 'views/_portafolio.html',
+				controller: 'PortafolioCtrl'
+			})
+			.otherwise({
+				redirectTo: '/'
+			});
+		$locationProvider.html5Mode(true);
+}]);
 //Directivas
 app.directive('slideshow', [
 
@@ -7,20 +28,20 @@ app.directive('slideshow', [
 			restrict: 'E',
 			templateUrl: 'views/_carousel.html',
 			controller: 'slideshowCtrl'
-		}
+		};
 }]);
 app.controller('slideshowCtrl', ['$scope',
 	function ($scope) {
 		$scope.images = [
 			{
-				src: 'img/fb.png',
+				src: 'img/icono-noticias.png',
 				alt: 'facebook'
 	},
 			{
-				src: 'img/documentos1.png',
+				src: 'img/noticias6.jpg',
 				alt: 'Documentos 1'
-	}]
-}])
+	}];
+}]);
 app.directive('proyectoInfo', [
 
 	function () {
@@ -37,14 +58,9 @@ app.directive('sliderProyectos', [
 			restrict: 'E',
 			templateUrl: 'views/contenedorProyectos.html',
 			controller: 'ProyectoCtrl'
-		}
+		};
 }]);
 //Controladores
-app.controller('ProyectoCtrl', ['$scope', 'ControlProyectos',
-	function ($scope, ControlProyectos) {
-		$scope.proyectos = ControlProyectos.obtenerTodos();
-		$scope.enVotacion = true;
-}])
 //Servicios
 app.factory('ControlProyectos', ['$http',
 	function ($http) {
@@ -52,23 +68,38 @@ app.factory('ControlProyectos', ['$http',
 			obtenerTodos: function () {
 				return proyectosData;
 			}
-		}
+		};
 }]);
-
+////Controladores
+app.controller('ProyectoCtrl', ['$scope', 'ControlProyectos',
+	function ($scope, ControlProyectos) {
+		$scope.proyectos = ControlProyectos.obtenerTodos();
+		$scope.enVotacion = true;
+}]);
 app.controller('PerfilCtrl', ['$scope', 'ControlDeUsuario',
 	function ($scope, ControlDeUsuario) {
 		$scope.modificar = false;
 		$scope.setModificar = function () {
-			if ($scope.modificar == true) {
+			if ($scope.modificar === true) {
 				$scope.modificar = false;
 			} else {
 				$scope.modificar = true;
 			}
-		}
+		};
 		$scope.usuario = usuarioData;
 		$scope.actualizarDatos = function () {
-			ControlDeUsuario.modificarPerfil($scope.foto, $scope.nombre, $scope.primerApellido, $scope.segundoApellido, $scope.correoElectronico, $scope.telefono, $scope.celular, $scope.descripcion, $scope.direccionExacta)
-		}
+			ControlDeUsuario.modificarPerfil($scope.foto, $scope.nombre, $scope.primerApellido, $scope.segundoApellido, $scope.correoElectronico, $scope.telefono, $scope.celular, $scope.descripcion, $scope.direccionExacta);
+			$scope.foto = '';
+			$scope.nombre = '';
+			$scope.primerApellido = '';
+			$scope.segundoApellido = '';
+			$scope.correoElectronico = '';
+			$scope.telefono = '';
+			$scope.celular = '';
+			$scope.descripcion = '';
+			$scope.direccionExacta = '';
+			$scope.modificar = false;
+		};
 }]);
 app.factory('ControlDeUsuario', ['$http',
 	function ($http) {
@@ -92,6 +123,8 @@ app.factory('ControlDeUsuario', ['$http',
 		};
 }]);
 
+
+//datos Quemados
 var proyectosData = [{
 		nombre: 'Dmg Coders',
 		descripcion: 'WebApp para control de historial de proyecto ',

@@ -98,10 +98,11 @@ footer {
   background-color: #f4f3f3; }
 
 .proyecto-info {
+  width: 380px;
   border: 1px solid gray;
-  margin-right: 8px; }
+  margin-left: 8px; }
   .proyecto-info:first-child {
-    margin-right: 0; }
+    margin-left: 0; }
 
 h1, legend {
   color: #757475;
@@ -222,29 +223,14 @@ md-checkbox.md-default-theme.md-checked .md-icon {
   margin-top: 1em;
   padding: 1em; }
 
-<<<<<<< HEAD
-/* line 97, ../sass/_documentos.scss */
 .modal-documentos .modal-body input {
-  margin-bottom: 1em;
-}
-/* line 100, ../sass/_documentos.scss */
-.modal-documentos .modal-body div {
-  margin-left: 0 !important;
-}
-
-/* line 105, ../sass/_documentos.scss */
-=======
-.modal-body input {
   margin-bottom: 1em; }
+.modal-documentos .modal-body div {
+  margin-left: 0 !important; }
 
->>>>>>> d77f80d4d26e5d3e7884f22123eff5f2ac35a488
 .link {
   text-align: right; }
 
-<<<<<<< HEAD
-/* line 109, ../sass/_documentos.scss */
-=======
->>>>>>> d77f80d4d26e5d3e7884f22123eff5f2ac35a488
 .information h1 {
   display: inline-block;
   font-size: 18px;
@@ -389,5 +375,7 @@ input.botonMaterial:focus ~ .highlight {
   to {
     width: 0;
     background: transparent; } }
+.previstaDePerfil input, label, textarea {
+  display: block; }
 
 /*# sourceMappingURL=screen.css.map */
